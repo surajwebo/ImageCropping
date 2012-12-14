@@ -95,22 +95,6 @@
         else
             [self.navigationController dismissModalViewControllerAnimated:YES];
         
-        
-        /*
-         UIImage *photo = [UIImage imageNamed:imageNames[indexPath.row]];
-         
-         SSPhotoCropperViewController *photoCropper =
-         [[SSPhotoCropperViewController alloc] initWithPhoto:photo
-         delegate:self
-         uiMode:SSPCUIModePresentedAsModalViewController
-         showsInfoButton:YES];
-         [photoCropper setMinZoomScale:0.75f];
-         [photoCropper setMaxZoomScale:1.50f];
-         UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:photoCropper];
-         [self presentModalViewController:nc animated:YES];
-         */
-        
-        
         SSPhotoCropperViewController *sSPhotoCropperViewController = [[SSPhotoCropperViewController alloc] initWithPhoto:selectedImage delegate:self];
         [sSPhotoCropperViewController setMinZoomScale:0.75f];
         [sSPhotoCropperViewController setMaxZoomScale:1.50f];
